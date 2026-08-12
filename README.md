@@ -1,127 +1,122 @@
-# 🚀 Ranzx - VPS Tools Dashboard
-
 <div align="center">
+  
+### VPS Tools Dashboard
 
 ![Bash](https://x.xcute.workers.dev/f/images/ef9c10520a79.gif)
-![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Linux%20VPS-orange?style=for-the-badge&logo=linux)
-![Version](https://img.shields.io/badge/Version-2.0-brightgreen?style=for-the-badge)
 
-![Stars](https://img.shields.io/github/stars/USERNAME/ranzx?style=social)
-![Forks](https://img.shields.io/github/forks/USERNAME/ranzx?style=social)
-![Issues](https://img.shields.io/github/issues/USERNAME/ranzx)
-![Last Commit](https://img.shields.io/github/last-commit/USERNAME/ranzx)
 
-**Dashboard interaktif untuk cek spesifikasi VPS & install tools populer dengan sekali klik**
 
-[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Cara Pakai](#-cara-pakai) • [Menu](#-daftar-menu) • [Kontribusi](#-kontribusi)
+**One dashboard. One command. Every tool your VPS needs.**
+
+[Features](#-features) • [Install](#-installation) • [Usage](#-usage) • [Menu](#-menu-list) • [Contributing](#-contributing)
 
 </div>
 
 ---
 
-## 📋 Tentang
+## 📋 About
 
-**Ranzx** adalah tools dashboard berbasis bash script yang memudahkan kamu untuk:
-- Mengecek spesifikasi VPS (CPU, RAM, Disk, Uptime) dengan tampilan yang rapi
-- Install web server, runtime, dan tools populer tanpa perlu hafal command satu-satu
-- Semua proses interaktif — tinggal pilih menu, tekan `y`, selesai
+**Moon Luna** is a lightweight, interactive bash dashboard that turns VPS setup into a one-key experience:
 
-Cocok buat kamu yang baru mulai kelola VPS dan males ngetik command panjang berkali-kali.
+- 📊 Instantly inspect your server specs — no more digging through five different commands
+- ⚙️ Spin up web servers, runtimes, and dev tools with a single keypress
+- 🖱️ Fully menu-driven — pick a number, hit `y`, done
 
-## ✨ Fitur
+Built for people who'd rather manage servers than memorize `apt install` incantations.
 
-- 📊 Cek informasi sistem lengkap (OS, kernel, CPU, RAM, disk, load average)
-- 🌐 Install Nginx web server otomatis
-- 📦 Install Git & clone repository langsung dari menu
-- ⚡ Install Node.js (pilihan versi 16/18/20)
-- 📦 Install NVM (Node Version Manager)
-- 🎮 Install Pterodactyl Panel
-- 🎨 Install Neofetch
-- 🔧 Install banyak tools sekaligus dalam satu perintah
-- 🎬 Animasi loading & progress bar biar nggak bosen nunggu
+## ✨ Features
 
-## 🛠️ Requirement
+| | |
+|---|---|
+| 📊 | Full system report — OS, kernel, CPU, RAM, disk, load average |
+| 🌐 | One-click Nginx install |
+| 📦 | Git install + instant repo cloning |
+| ⚡ | Node.js installer (v16 / v18 / v20) |
+| 📦 | NVM (Node Version Manager) setup |
+| 🎮 | Pterodactyl Panel installer |
+| 🎨 | Neofetch install |
+| 🔧 | Batch-install multiple tools in one go |
+| 🎬 | Loading animations & progress bars so waiting doesn't feel like waiting |
 
-- OS: Ubuntu / Debian (atau turunannya)
-- Akses `root` atau `sudo`
-- Koneksi internet aktif
+## 🛠️ Requirements
 
-## 📥 Instalasi
+- Ubuntu / Debian (or a derivative)
+- `root` or `sudo` access
+- An active internet connection
 
-Clone repository ini ke VPS kamu:
+## 📥 Installation
 
-```bash
-git clone https://github.com/cakrahobicoding/cakrahobicoding.git
-cd cakrahobicoding
-chmod +x ranzx.sh
-```
-
-Atau download langsung tanpa clone:
+**Clone it:**
 
 ```bash
-curl -O https://raw.githubusercontent.com/cakrahobicoding/ranzx/main/ranzx.sh
-chmod +x ranzx.sh
+git clone https://github.com/mooonlunaa/vpstools.git
+cd vpstools
+chmod +x vpstools.sh
 ```
 
-## ▶️ Cara Pakai
+## ▶️ Usage
 
-Jalankan dengan akses root:
+Run it as root:
 
 ```bash
 sudo bash ranzx.sh
 ```
 
-Setelah dijalankan, kamu akan melihat menu interaktif. Tinggal ketik angka menu yang diinginkan lalu tekan Enter.
+The interactive menu pops up — type the number you want, hit Enter, and let Ranzx do the rest.
 
-## 📜 Daftar Menu
+## 📜 Menu List
 
-| No | Menu | Keterangan |
+| No | Menu | Description |
 |----|------|------------|
-| 1 | 📊 Cek System Information | Lihat spesifikasi lengkap VPS |
-| 2 | 🌐 Install Nginx | Install & jalankan web server Nginx |
-| 3 | 📦 Install Git & Clone Repository | Install Git dan clone repo pilihan |
-| 4 | ⚡ Install Node.js | Install Node.js versi 16/18/20 |
-| 5 | 📦 Install NVM | Install Node Version Manager |
-| 6 | 🎮 Install Pterodactyl Panel | Install game server panel |
-| 7 | 🎨 Install Neofetch | Install tools tampilan system info |
-| 8 | 🔧 Install Multiple Tools | Install beberapa tools sekaligus |
-| 0 | ❌ Exit | Keluar dari dashboard |
+| 1 | 📊 System Info | Full VPS specs at a glance |
+| 2 | 🌐 Install Nginx | Sets up and starts the Nginx web server |
+| 3 | 📦 Git + Clone | Installs Git and clones a repo of your choice |
+| 4 | ⚡ Install Node.js | Choose between v16 / v18 / v20 |
+| 5 | 📦 Install NVM | Node Version Manager setup |
+| 6 | 🎮 Pterodactyl Panel | Installs the game server panel |
+| 7 | 🎨 Install Neofetch | System info fetch tool |
+| 8 | 🔧 Multi-install | Install several tools at once |
+| 0 | ❌ Exit | Closes the dashboard |
 
-## ⚠️ Catatan
+## ⚠️ Notes
 
-- Script ini akan menjalankan perintah `sudo apt install`, jadi pastikan kamu paham tools apa yang akan diinstall sebelum konfirmasi `y`
-- Untuk Pterodactyl Panel, pastikan PHP, MySQL/MariaDB, dan Composer sudah tersedia
-- Setelah install NVM, buka terminal baru sebelum menjalankan `nvm`
+- The script runs `sudo apt install` under the hood — know what you're installing before confirming `y`
+- Pterodactyl Panel requires PHP, MySQL/MariaDB, and Composer to already be set up
+- After installing NVM, open a fresh terminal before running `nvm`
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-Pull request selalu diterima! Untuk perubahan besar, buka issue dulu buat diskusi mau diubah apa.
+PRs are always welcome. For bigger changes, open an issue first so we can talk it through.
 
-1. Fork repo ini
-2. Buat branch baru (`git checkout -b fitur-baru`)
-3. Commit perubahan (`git commit -m 'Menambahkan fitur X'`)
-4. Push ke branch (`git push origin fitur-baru`)
-5. Buka Pull Request
+1. Fork the repo
+2. Create a branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add feature X'`)
+4. Push the branch (`git push origin feature-name`)
+5. Open a Pull Request
 
-## 📄 Lisensi
+## 📄 License
 
 Distributed under the MIT License.
 
-## 👤 About Me
+## 👤 Identity
 
-<!-- Ganti bagian ini dengan info kamu -->
-
-**Nama Kamu**
-
-- GitHub: [@cakrahobicoding](https://github.com/cakrahobicoding)
-- Instagram: [@its_mecakra](https://instagram.com/its_mecakra)
-- Telegram: [@rezegrl](https://t.me/rezegrl)
+```yaml
+identity:
+  name: moonluna
+  role: IT tinkerer / VPS enthusiast
+  hobbies:
+    - sleeping 😴
+    - listening to music 🎧
+  socials:
+    github: "@moonluna"
+    instagram: "@moonluna"
+    telegram: "@moonluna"
+```
 
 ---
 
 <div align="center">
 
-⭐ Kalau tools ini membantu, jangan lupa kasih **star** ya!
+⭐ If Ranzx saved you some typing, drop a **star** — it means a lot.
 
 </div>
